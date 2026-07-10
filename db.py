@@ -6,3 +6,6 @@ mydb = pymysql.connect(
     database="finance_tracker"
 )
 print(mydb)
+
+cursor = mydb.cursor()
+
