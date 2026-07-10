@@ -5,7 +5,6 @@ mydb = pymysql.connect(
     password="stop1",
     database="finance_tracker"
 )
-print(mydb)
 
 cursor = mydb.cursor()
-
+cursor.execute("CREATE TABLE users(user_id INT AUTO_INCREMENT PRIMARY KEY, name varchar(255))")
